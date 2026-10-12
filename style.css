@@ -1,0 +1,546 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f6f2;
+    color: #292929;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.custom-navbar {
+    background-color: #24352d;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.35rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand i {
+    margin-right: 6px;
+    color: #d6ad78;
+}
+
+.nav-link {
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #d9b88a !important;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero-section {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #24352d,
+        #53675b
+    );
+
+    color: white;
+    padding: 70px 0;
+}
+
+.hero-label {
+    display: inline-block;
+    color: #e0bd8c;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-section h1 {
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 span {
+    color: #e0bd8c;
+}
+
+.hero-section p {
+    max-width: 600px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.7;
+    color: #e4e4e4;
+}
+
+.btn-main {
+    background-color: #d6ad78;
+    color: #24352d;
+
+    padding: 12px 24px;
+    border-radius: 30px;
+
+    font-weight: bold;
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background-color: #f0d1a3;
+    transform: translateY(-2px);
+}
+
+.hero-icon {
+    width: 240px;
+    height: 240px;
+
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+}
+
+.hero-icon i {
+    font-size: 8rem;
+    color: #d6ad78;
+}
+
+
+/* ========================================
+   PRODUCT SECTION
+======================================== */
+
+.product-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title span,
+.about-label {
+    color: #9a7044;
+
+    font-size: 0.85rem;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.section-title p {
+    color: #777;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+
+/* ========================================
+   PRODUCT CARD
+======================================== */
+
+.product-card {
+    background-color: white;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    height: 100%;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ========================================
+   PRODUCT IMAGE
+======================================== */
+
+.product-image {
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.06);
+}
+
+
+/* ========================================
+   PRODUCT CONTENT
+======================================== */
+
+.product-content {
+    padding: 20px;
+}
+
+.category {
+    font-size: 0.75rem;
+
+    color: #a07445;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.product-content h3 {
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.product-content p {
+    color: #777;
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   PRODUCT BOTTOM
+======================================== */
+
+.product-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 18px;
+
+    gap: 10px;
+}
+
+.product-bottom strong {
+    color: #26382f;
+
+    font-size: 1rem;
+}
+
+.btn-buy {
+    border: none;
+
+    background-color: #26382f;
+
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #a07445;
+}
+
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about-section {
+    padding: 80px 0;
+
+    background-color: #ece7df;
+}
+
+.about-section h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    margin: 15px 0;
+}
+
+.about-section p {
+    color: #666;
+
+    line-height: 1.8;
+}
+
+.about-list {
+    margin-top: 25px;
+}
+
+.about-list div {
+    margin-bottom: 12px;
+
+    font-weight: 500;
+}
+
+.about-list i {
+    color: #788f79;
+
+    margin-right: 8px;
+}
+
+
+/* ========================================
+   ABOUT BOX
+======================================== */
+
+.about-box {
+    min-height: 300px;
+
+    background-color: #26382f;
+
+    color: white;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.about-box i {
+    color: #d6ad78;
+
+    font-size: 5rem;
+
+    margin-bottom: 20px;
+}
+
+.about-box h3 {
+    max-width: 350px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    background-color: #1d2924;
+
+    color: white;
+
+    padding: 60px 0 25px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer h3 i {
+    color: #d6ad78;
+}
+
+footer p {
+    color: #bfc5c1;
+
+    line-height: 1.7;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+}
+
+footer a {
+    display: block;
+
+    color: #bfc5c1;
+
+    text-decoration: none;
+
+    margin-bottom: 8px;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #d6ad78;
+}
+
+footer hr {
+    border-color: #536057;
+
+    margin-top: 35px;
+}
+
+.copyright {
+    text-align: center;
+
+    margin-bottom: 0;
+
+    font-size: 0.85rem;
+}
+
+
+/* ========================================
+   BREAKPOINT 1
+   TABLET KECIL
+======================================== */
+
+@media (min-width: 576px) {
+
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .product-content {
+        padding: 18px;
+    }
+
+}
+
+
+/* ========================================
+   BREAKPOINT 2
+   TABLET
+======================================== */
+
+@media (min-width: 768px) {
+
+    .product-section {
+        padding: 90px 0;
+    }
+
+    .hero-section {
+        min-height: 550px;
+    }
+
+}
+
+
+/* ========================================
+   BREAKPOINT 3
+   DESKTOP
+======================================== */
+
+@media (min-width: 992px) {
+
+    .custom-navbar {
+        padding: 18px 0;
+    }
+
+    .nav-link {
+        margin-left: 20px;
+    }
+
+    .product-section {
+        padding: 100px 0;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 575px) {
+
+    .hero-section {
+        text-align: center;
+
+        padding: 60px 20px;
+    }
+
+    .hero-section p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-icon {
+        width: 170px;
+        height: 170px;
+
+        margin-top: 40px;
+    }
+
+    .hero-icon i {
+        font-size: 5rem;
+    }
+
+    .product-section,
+    .about-section {
+        padding: 60px 15px;
+    }
+
+    .product-bottom strong {
+        font-size: 0.9rem;
+    }
+
+    .btn-buy {
+        padding: 7px 14px;
+    }
+
+}
